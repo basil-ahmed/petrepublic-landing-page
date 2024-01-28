@@ -1,0 +1,41 @@
+.content {
+    position: relative;
+    padding-top: 10em;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+}
+
+.content .textbox {
+    position: relative;
+    max-width: 600;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin: 2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+    color: #000000;
+    line-height: 1.5;
+    margin-right: 40em;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+.doglogo {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    width: 35%;
+    transform: translateY(200px);
+}
