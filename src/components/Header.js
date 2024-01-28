@@ -16,7 +16,7 @@ function Header() {
   return (
     <header className="container">
       <nav>
-        <img src={require("../assets/images/logo.jpeg")} className="logo" alt='Logo'/>
+        <img src={require("../assets/images/logo.png")} className="logo" alt='Logo'/>
         <img src={require("../assets/images/dog-gif.webp")} className="dog-gif" alt='Dog Running'/>
         <ul>
           <li><a href="#home" onClick={(event) => handleClick(event, 'home')}>Home</a></li>
