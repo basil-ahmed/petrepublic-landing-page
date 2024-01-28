@@ -1,6 +1,6 @@
 import React from 'react';
 import { FacebookShareButton, LinkedinShareButton, TwitterShareButton, FacebookIcon, LinkedinIcon, TwitterIcon  } from 'react-share';
-import { FaInstagram } from 'react-icons/fa'; // Import filled Instagram icon
+import { FaInstagram } from 'react-icons/fa'; 
 import './Footer.css';
 
 const Footer = () => {
