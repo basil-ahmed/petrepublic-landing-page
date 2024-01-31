@@ -96,3 +96,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
     margin-bottom: 20px; /* Add some space below the heading */
 }
+
+.appdog {
+    width: 25%;
+}

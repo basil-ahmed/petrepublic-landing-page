@@ -51,10 +51,10 @@ function Home() {
       </Slider>
     </div>
     <div className="carousel-text">
-      <div className="carousel-text-header">
+      {/* <div className="carousel-text-header">
     <h2>Welcome To PetRepublic</h2>
     <p> Download the app today and care for your pet with Pet Republic!</p>
-    </div>
+    </div> */}
     <div className="button-container">
       <button onClick={handleIOSDownload} className="download-button ios" style={{ backgroundImage: `url(${iosButtonImage})` }}>
       </button>
