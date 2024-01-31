@@ -1,14 +1,24 @@
+@font-face {
+    font-family: 'Urbane Rounded Demi';
+    src: url('../assets/font/UrbaneRounded-DemiBold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Urbane Rounded';
+    src: url('../assets/font/UrbaneRounded-Light.ttf') format('truetype');
+  }
+
 .content {
     position: relative;
-    padding-top: 10em;
-    width: 90%;
+    padding-top: 5em;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 
 .content .textbox {
@@ -30,6 +40,42 @@
     margin-right: 40em;
     padding-bottom: 5%;
     padding-top: 2%;
+    font-family: 'Urbane Rounded';
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.textbox::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    transform: rotate(30deg);
+    z-index: -1;
+}
+
+.textbox::after {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    right: -80px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, #ffecd2 0%, #fcb69f 100%);
+    transform: rotate(-30deg);
+    z-index: -1;
+}
+
+.textbox:hover {
+    transform: scale(1.05);
 }
 
 .doglogo {
@@ -38,4 +84,19 @@
     right: 0;
     width: 35%;
     transform: translateY(200px);
+}
+
+.aboutapp{
+    font-family: 'Urbane Rounded Demi';
+	font-weight: 600;
+    font-style: normal;
+    font-size: 2.5em; /* Increase the font size */
+    text-align: center; /* Center the text */
+    color: #EF8214; /* Change the text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.appdog {
+    width: 25%;
 }

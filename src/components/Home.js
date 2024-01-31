@@ -34,27 +34,27 @@ function Home() {
       <Slider {...settings}>
         {/* Add your slides here */}
         <div className='carousel-image'>
-          <img src={require("../assets/images/homeimg1.jpeg")} alt="Slide 1" />
+          <img src={require("../assets/images/test1.jpg")} alt="Slide 1" className='slide1' />
         </div>
         
         <div className='carousel-image'>
-          <img src={require("../assets/images/homeimg2.jpeg")} alt="Slide 2" />
+          <img src={require("../assets/images/test4.jpg")} alt="Slide 2" />
         </div>
 
         <div className='carousel-image'>
-          <img src={require("../assets/images/homeimg3.jpeg")} alt="Slide 3" />
+          <img src={require("../assets/images/test3.jpg")} alt="Slide 3" />
         </div>
 
         <div className='carousel-image'>
-          <img src={require("../assets/images/homeimg4.jpeg")} alt="Slide 4" />
+          <img src={require("../assets/images/test6.jpg")} alt="Slide 4" />
         </div>
       </Slider>
     </div>
     <div className="carousel-text">
-      <div className="carousel-text-header">
+      {/* <div className="carousel-text-header">
     <h2>Welcome To PetRepublic</h2>
     <p> Download the app today and care for your pet with Pet Republic!</p>
-    </div>
+    </div> */}
     <div className="button-container">
       <button onClick={handleIOSDownload} className="download-button ios" style={{ backgroundImage: `url(${iosButtonImage})` }}>
       </button>

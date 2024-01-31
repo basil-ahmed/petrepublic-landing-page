@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './About.css'; 
 import van from '../assets/images/van.png';
+import appdog from '../assets/images/appdog1.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -28,7 +29,7 @@ function About() {
 
   return (
     <>
-    <div className="content" >
+    {/* <div className="content" >
       <h1 className="aboutapp" >About the <span style={{color:"#1F9C89"}}>App</span></h1>
       <div className="textbox">
         <p>Third-Party Platform Technology powered by cutting-edge third-party platform technology, Pet Republic ensures a seamless and secure user experience. Benefit from advanced features and a robust infrastructure for all your pet care needs.
@@ -38,8 +39,14 @@ function About() {
         Download the app today and make your pet care with Pet Republic!</p>
       </div>
       <img src={van} className="doglogo" alt="Dog Logo" style={{ transform: `translate3d(${scrollPosition-scrollPosition}px, ${-scrollPosition}px, 0)` }}/>
-    </div>
+    </div> */}
 
+    {/* <div className='phone-section'>
+      <div className='phone'>
+        <img src={appdog} alt="App Dog" className="appdog" />
+      </div>
+      
+    </div> */}
     </>
   );
 }
