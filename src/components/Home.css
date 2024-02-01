@@ -90,6 +90,7 @@
   .slick-dots li.slick-active button:before {
     opacity: .75;
     color: black;
+    cursor: pointer;
   }
 
   .carousel-images {
