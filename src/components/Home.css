@@ -66,6 +66,7 @@
   
   .slick-dots li button:hover, .slick-dots li button:focus {
     outline: none;
+    cursor: pointer;
   }
   
   .slick-dots li button:before {
