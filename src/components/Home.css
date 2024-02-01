@@ -43,6 +43,7 @@
     margin: 2.5%;
     width: 100%;
     cursor: pointer;
+    z-index: 10;
   }
   
   .slick-dots li {
