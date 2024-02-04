@@ -7,9 +7,6 @@
     background-repeat: no-repeat;
 }
 
-.signup-form h2 {
-    margin-bottom: 5%;
-}
 
 .signup-form .email-input {
     margin: 10px 0;
@@ -18,9 +15,16 @@
 
 .signup-form .submit-button {
     margin-top: 20px;
-    margin-left: 50px;
+    /* margin-left: 5%; */
 }
 
 .success-message {
     color: #50fa7b;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

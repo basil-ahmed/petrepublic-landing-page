@@ -28,10 +28,10 @@ function MailingList() {
     return (
         <div className="signup-form">
             <h2>Join Our Mailing List</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='sign-up'>
                 <TextField 
                     label="Email" 
-                    variant="outlined" 
+                    variant="standard" 
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="email-input"
