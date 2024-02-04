@@ -10,14 +10,19 @@
 
 .content {
     position: relative;
+    background-image: url("../assets/images/layered-waves-grey.svg");
+    background-size: cover; /* Cover the entire .content area */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center;
     padding-top: 5em;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2em;
     padding-bottom: 2%;
 }
 
@@ -31,23 +36,28 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    width: 20%;
+    height: 0.5em;
     padding-right: 2em;
     padding-left: 2em;
-    margin: 2em;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
     color: #000000;
     line-height: 1.5;
     margin-right: 40em;
-    padding-bottom: 5%;
-    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
     font-family: 'Urbane Rounded';
     font-weight: 300;
     font-style: normal;
     position: relative;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    flex: 1 0 20%; /* This will make the textboxes take up equal space */
+    margin:10px;
+    transition: background-color 0.5s ease; /* Add a transition for smooth color change */
 }
 
 .textbox::before {
@@ -57,9 +67,10 @@
     left: -50px;
     width: 200px;
     height: 200px;
-    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background: linear-gradient(45deg, #f8f8f8 100%, #f8f8f8 100%, #f8f8f8 100%);
     transform: rotate(30deg);
     z-index: -1;
+    opacity: 0;
 }
 
 .textbox::after {
@@ -69,13 +80,15 @@
     right: -80px;
     width: 200px;
     height: 200px;
-    background: linear-gradient(45deg, #ffecd2 0%, #fcb69f 100%);
+    background: linear-gradient(45deg, #f8f8f8 100%, #f8f8f8 100%);
     transform: rotate(-30deg);
     z-index: -1;
+    opacity: 0;
 }
 
 .textbox:hover {
     transform: scale(1.05);
+    background-color: #f8f8f8; /* Change the background color to grey on hover */
 }
 
 .doglogo {
@@ -90,11 +103,18 @@
     font-family: 'Urbane Rounded Demi';
 	font-weight: 600;
     font-style: normal;
-    font-size: 2.5em; /* Increase the font size */
+    font-size: 1.8em; /* Increase the font size */
     text-align: center; /* Center the text */
     color: #EF8214; /* Change the text color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  */
     margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .appdog {

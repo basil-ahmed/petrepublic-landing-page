@@ -29,17 +29,22 @@ function About() {
 
   return (
     <>
-    {/* <div className="content" >
-      <h1 className="aboutapp" >About the <span style={{color:"#1F9C89"}}>App</span></h1>
-      <div className="textbox">
-        <p>Third-Party Platform Technology powered by cutting-edge third-party platform technology, Pet Republic ensures a seamless and secure user experience. Benefit from advanced features and a robust infrastructure for all your pet care needs.
-
-        Simplify Your Pet Care with Pet Republic - Say goodbye to pet care hassles and embrace the simplicity of Pet Republic! Accessing top-notch services for your beloved pets has never been easier.
-
-        Download the app today and make your pet care with Pet Republic!</p>
-      </div>
-      <img src={van} className="doglogo" alt="Dog Logo" style={{ transform: `translate3d(${scrollPosition-scrollPosition}px, ${-scrollPosition}px, 0)` }}/>
-    </div> */}
+    <div className="content" >
+      <h1 className="aboutapp" data-aos="fade-down">Introducing the <span style={{color:"#1F9C89"}}>Pet Passport</span> on the PetRepublic app!</h1>
+      <div className="textbox" data-aos="fade-left">
+      <p>Step 1: Choose "Create Passport" on the app.</p>
+        </div>
+        <div className="textbox" data-aos="fade-right">
+          <p>Step 2: Select your payment plan.</p>
+        </div>
+        <div className="textbox" data-aos="fade-left">
+          <p>Step 3: Fill out the payment details.</p>
+        </div>
+        <div className="textbox" data-aos="fade-right">
+          <p>Step 4: Fill out your fur baby's details!</p>
+        </div>
+      {/* <img src={van} className="doglogo" alt="Dog Logo" style={{ transform: `translate3d(${scrollPosition-scrollPosition}px, ${-scrollPosition}px, 0)` }}/> */}
+    </div> 
 
     {/* <div className='phone-section'>
       <div className='phone'>
