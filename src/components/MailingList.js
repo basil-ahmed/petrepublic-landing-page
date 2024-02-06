@@ -24,18 +24,18 @@ function MailingList() {
         setSubmitted(true);
         // Send data to server/API
         const url = 'https://docs.google.com/forms/d/e/1FAIpQLSczLwPCI62d7XgnOEkIQo7__Q8hO3TiW3MMH6K0wIKyna50aw/formResponse';
-    const data = new FormData();
-    data.append('entry.1386355655', email);
+        const data = new FormData();
+        data.append('entry.1386355655', email);
 
-    fetch(url, {
-        method: 'POST',
-        body: data,
-        mode: 'no-cors' // 'cors' by default
-    }).then(response => {
-        console.log(response);
-    }).catch(error => {
-        console.error(error);
-    });
+        fetch(url, {
+            method: 'POST',
+            body: data,
+            mode: 'no-cors' // 'cors' by default
+        }).then(response => {
+            console.log(response);
+        }).catch(error => {
+            console.error(error);
+        });
     };
 
     return (
