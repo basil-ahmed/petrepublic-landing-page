@@ -32,22 +32,22 @@ function Home() {
     <>
     <div className="home">
       <Slider {...settings}>
-        {/* Add your slides here */}
+
         <div className='carousel-image'>
-          <img src={require("../assets/images/test1.jpg")} alt="Slide 1" className='slide1' />
+          <img src={require("../assets/images/test6.jpg")} alt="Slide 1" />
+        </div>
+
+        <div className='carousel-image'>
+          <img src={require("../assets/images/test1.jpg")} alt="Slide 2" className='slide1' />
         </div>
         
         <div className='carousel-image'>
-          <img src={require("../assets/images/test4.jpg")} alt="Slide 2" />
+          <img src={require("../assets/images/test4.jpg")} alt="Slide 3" />
         </div>
 {/* 
         <div className='carousel-image'>
           <img src={require("../assets/images/test3.jpg")} alt="Slide 3" />
         </div> */}
-
-        <div className='carousel-image'>
-          <img src={require("../assets/images/test6.jpg")} alt="Slide 3" />
-        </div>
       </Slider>
     </div>
     <div className="carousel-text">
