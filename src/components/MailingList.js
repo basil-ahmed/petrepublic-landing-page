@@ -23,20 +23,35 @@ function MailingList() {
         setError('');
         setSubmitted(true);
         // Send data to server/API
+        const url = 'https://docs.google.com/forms/d/e/1FAIpQLSczLwPCI62d7XgnOEkIQo7__Q8hO3TiW3MMH6K0wIKyna50aw/formResponse';
+        const data = new FormData();
+        data.append('entry.1386355655', email);
+
+        fetch(url, {
+            method: 'POST',
+            body: data,
+            mode: 'no-cors' // 'cors' by default
+        }).then(response => {
+            console.log(response);
+        }).catch(error => {
+            console.error(error);
+        });
     };
 
     return (
         <div className="signup-form">
             <h2>Join Our Mailing List</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='sign-up'>
                 <TextField 
                     label="Email" 
-                    variant="outlined" 
+                    variant="standard" 
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="email-input"
                     error={!!error}
                     helperText={error}
+                    type='text'
+                    name='entry.1386355655'
                 />
                 <Button variant="contained" color="primary" type="submit" className="submit-button">
                     Sign Up
