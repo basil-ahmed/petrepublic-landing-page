@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaLinkedin, FaInstagram, FaTiktok } from 'react-icons/fa'; 
+import { FaFacebook, FaLinkedin, FaInstagram, FaTiktok, FaPhone, FaEnvelope } from 'react-icons/fa'; 
 import './Footer.css';
 
 const Footer = () => {
@@ -21,8 +21,8 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-links">
-          <p>About Us</p>
-          <p>Contact</p>
+          <p><FaPhone /> : +971 50 116 8480</p>
+          <p><FaEnvelope /> : support@petrepublic.ae</p>
           <p>Privacy Policy</p>
         </div>
         <div className="footer-company-name">
