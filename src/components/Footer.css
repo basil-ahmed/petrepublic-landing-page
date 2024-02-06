@@ -1,6 +1,10 @@
 .footer {
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2); /* Add box shadow to footer */
   padding: 20px;
+  /* background-image: url("../assets/images/wave-black.svg"); */
+  background-size: cover; /* Cover the entire .footer area */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center;
 }
 
 .social-media {
@@ -13,19 +17,21 @@
 }
 
 .footer-links {
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
 }
 
-.footer-links a {
+.footer-links p {
   color: rgb(0, 0, 0);
   text-decoration: none;
   margin: 0 10px;
   font-size: 16px;
 }
 
-.footer-links a:hover {
+.footer-links p:hover {
   text-decoration: underline;
 }
 

@@ -86,7 +86,7 @@
 }
 
 .textbox:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     background-color: #f8f8f8; /* Change the background color to grey on hover */
 }
 
