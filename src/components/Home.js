@@ -40,13 +40,13 @@ function Home() {
         <div className='carousel-image'>
           <img src={require("../assets/images/test4.jpg")} alt="Slide 2" />
         </div>
-
+{/* 
         <div className='carousel-image'>
           <img src={require("../assets/images/test3.jpg")} alt="Slide 3" />
-        </div>
+        </div> */}
 
         <div className='carousel-image'>
-          <img src={require("../assets/images/test6.jpg")} alt="Slide 4" />
+          <img src={require("../assets/images/test6.jpg")} alt="Slide 3" />
         </div>
       </Slider>
     </div>
