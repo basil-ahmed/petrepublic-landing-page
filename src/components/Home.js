@@ -42,7 +42,7 @@ function Home() {
         </div>
         
         <div className='carousel-image'>
-          <img src={require("../assets/images/test4.jpg")} alt="Slide 3" />
+          <img src={require("../assets/images/test2.webp")} alt="Slide 3" />
         </div>
 {/* 
         <div className='carousel-image'>
