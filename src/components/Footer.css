@@ -8,6 +8,9 @@
 }
 
 .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
