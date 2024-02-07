@@ -1,10 +1,10 @@
 .footer {
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2); /* Add box shadow to footer */
   padding: 20px;
-  /* background-image: url("../assets/images/wave-black.svg"); */
+  background-image: url("../assets/images/footervertplain.svg");
   background-size: cover; /* Cover the entire .footer area */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: 10% center;
 }
 
 .social-media {
@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #000000;
   padding-bottom: 20px;
 }
 
@@ -32,6 +32,10 @@
 
 .footer-links p:hover {
   text-decoration: underline;
+}
+
+.footer-links p svg {
+  vertical-align: text-bottom; 
 }
 
 .footer-company-name {
