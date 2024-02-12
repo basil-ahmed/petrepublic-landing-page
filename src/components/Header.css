@@ -70,8 +70,13 @@ nav {
 
 nav ul li {
 	display: inline-block;
-	list-style: none;
-	margin: 10px 20px;
+  list-style: none;
+  padding: 0 30px; /* Use padding instead of margin */
+  border-right: 2px solid #000;
+}
+
+nav ul li:last-child {
+  border-right: none; /* Remove the border from the last list item */
 }
 
 nav ul li a {
