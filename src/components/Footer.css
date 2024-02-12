@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 .footer {
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2); /* Add box shadow to footer */
   padding: 20px;
@@ -25,6 +28,14 @@
   padding-bottom: 20px;
 }
 
+.social-media a {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.social-media a:hover {
+  transform: translateY(-10px); 
+}
+
 .footer-links {
   display: flex;
   justify-content: center;
@@ -38,17 +49,21 @@
   text-decoration: none;
   margin: 0 10px;
   font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
-.footer-links p:hover {
+/* .footer-links p:hover {
   text-decoration: underline;
-}
+} */
 
 .footer-links p svg {
   vertical-align: text-bottom; 
 }
 
 .footer-company-name {
+  font-family: 'Outfit', sans-serif;
   font-weight: bold;
   font-size: 18px;
 }
