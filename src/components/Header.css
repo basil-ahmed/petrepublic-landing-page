@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 /* .top-banner {
     background-color: #ff4500;
     color: white;
@@ -24,31 +27,31 @@
     color: #ff4500;
   } */
 
-@font-face {
-  font-family: 'Urbane Rounded Demi';
-  src: url('../assets/font/UrbaneRounded-DemiBold.ttf') format('truetype');
+/* @font-face {
+  font-family: 'Outfit', sans-serif;
+  src: url('../assets/font/Outfit-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Urbane Rounded';
-  src: url('../assets/font/UrbaneRounded-Light.ttf') format('truetype');
-}
+  font-family: 'Outfit';
+  src: url('../assets/font/Outfit-Light.ttf') format('truetype');
+} */
 
 h2 {
-	font-family: 'Urbane Rounded Demi';
+	font-family: 'Outfit', sans-serif;
 	font-weight: 600;
     font-style: normal;
 }
 
 p {
-	font-family: 'Urbane Rounded';
+	font-family: 'Outfit', sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
 .logo {
     /* height: 5%; */
-    width: 10%;
+    width: 15%;
     /* padding-top: 10px; */
 }
 
@@ -70,12 +73,17 @@ nav {
 
 nav ul li {
 	display: inline-block;
-	list-style: none;
-	margin: 10px 20px;
+  list-style: none;
+  padding: 0 30px; /* Use padding instead of margin */
+  border-right: 2px solid #000;
+}
+
+nav ul li:last-child {
+  border-right: none; /* Remove the border from the last list item */
 }
 
 nav ul li a {
-	font-family: 'Urbane Rounded Demi';
+	font-family: 'Outfit', sans-serif;
 	font-weight: 600;
     font-style: normal;
 	color: #000;

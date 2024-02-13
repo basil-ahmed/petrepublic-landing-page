@@ -1,4 +1,8 @@
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+
+/* @font-face {
     font-family: 'Urbane Rounded Demi';
     src: url('../assets/font/UrbaneRounded-DemiBold.ttf') format('truetype');
   }
@@ -6,11 +10,11 @@
   @font-face {
     font-family: 'Urbane Rounded';
     src: url('../assets/font/UrbaneRounded-Light.ttf') format('truetype');
-  }
+  } */
 
 .content {
     position: relative;
-    background-image: url("../assets/images/layered-waves-grey.svg");
+    background-image: url("../assets/images/layeredblend4.svg");
     background-size: cover; /* Cover the entire .content area */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-position: center;
@@ -45,7 +49,7 @@
     margin-right: 40em;
     padding-bottom: 1%;
     padding-top: 1%;
-    font-family: 'Urbane Rounded';
+    font-family: 'Outfit', sans-serif;
     font-weight: 300;
     font-style: normal;
     position: relative;
@@ -90,6 +94,13 @@
     background-color: #f8f8f8; /* Change the background color to grey on hover */
 }
 
+.textbox p img {
+    width: 25px; /* Adjust the width of the icons */
+    height: auto; /* Keep the aspect ratio */
+    vertical-align: middle; /* Align the icons with the text */
+    margin-right: 10px; /* Add some space between the icon and the text */
+  }
+
 .doglogo {
     position: absolute;
     bottom: -50px;
@@ -99,10 +110,10 @@
 }
 
 .aboutapp{
-    font-family: 'Urbane Rounded Demi';
+    font-family: 'Outfit', sans-serif;
 	font-weight: 600;
     font-style: normal;
-    font-size: 1.8em; /* Increase the font size */
+    font-size: 32px; /* Increase the font size */
     text-align: center; /* Center the text */
     color: #EF8214; /* Change the text color */
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  */

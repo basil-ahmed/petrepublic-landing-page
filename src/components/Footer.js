@@ -4,7 +4,8 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
+      <img src={require("../assets/images/prdogr.png")} className="prdog" alt='Logo'/>
       <div className="footer-content">
         <div className="social-media">
           <a href="https://www.facebook.com/profile.php?id=100084255607426" target="_blank" rel="noopener noreferrer">
@@ -23,7 +24,6 @@ const Footer = () => {
         <div className="footer-links">
           <p><FaPhone /> : +971 50 116 8480</p>
           <p><FaEnvelope /> : support@petrepublic.ae</p>
-          <p>Privacy Policy</p>
         </div>
         <div className="footer-company-name">
           @ 2024 Pet Republic

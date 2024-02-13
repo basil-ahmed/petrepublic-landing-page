@@ -23,6 +23,7 @@ function Header() {
           <li><a href="#about" onClick={(event) => handleClick(event, 'about')}>Pet Passport</a></li>
           <li><a href="#services" onClick={(event) => handleClick(event, 'services')}>Services</a></li>
           <li><a href="#mailing-list" onClick={(event) => handleClick(event, 'mailing-list')}>Mailing List</a></li>
+          <li><a href="#footer" onClick={(event) => handleClick(event, 'footer')}>Contact</a></li>
         </ul>
       </nav>
     </header>

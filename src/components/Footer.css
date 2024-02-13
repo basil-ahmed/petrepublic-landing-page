@@ -1,10 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 .footer {
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2); /* Add box shadow to footer */
   padding: 20px;
-  background-image: url("../assets/images/footervertplain.svg");
+  background-image: url("../assets/images/footernew.svg");
   background-size: cover; /* Cover the entire .footer area */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-position: 10% center;
+  position: relative;
+}
+
+.prdog {
+  width: 20%; /* Adjust as needed */
+  height: auto;
+  float: left; /* Align the image to the left */
+  position: absolute;
+  top: 0.1%;
+  left: 0.1%;
 }
 
 .social-media {
@@ -13,6 +26,14 @@
   gap: 2%;
   margin-bottom: 20px;
   padding-bottom: 20px;
+}
+
+.social-media a {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.social-media a:hover {
+  transform: translateY(-10px); 
 }
 
 .footer-links {
@@ -28,17 +49,21 @@
   text-decoration: none;
   margin: 0 10px;
   font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
-.footer-links p:hover {
+/* .footer-links p:hover {
   text-decoration: underline;
-}
+} */
 
 .footer-links p svg {
   vertical-align: text-bottom; 
 }
 
 .footer-company-name {
+  font-family: 'Outfit', sans-serif;
   font-weight: bold;
   font-size: 18px;
 }
