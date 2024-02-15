@@ -23,6 +23,8 @@ const Footer = () => {
         </div>
         <div className="footer-links">
           <p><FaPhone /> : +971 50 116 8480</p>
+          <a href="http://legal.petrepublic.ae/Privacy-Policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+          <a href="http://legal.petrepublic.ae/Terms-and-Conditions" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
           <p><FaEnvelope /> : support@petrepublic.ae</p>
         </div>
         <div className="footer-company-name">
