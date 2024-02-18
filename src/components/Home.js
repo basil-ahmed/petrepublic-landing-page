@@ -20,7 +20,7 @@ function Home() {
 
   // Function to handle iOS download
   const handleIOSDownload = () => {
-    window.location.href = 'your-ios-download-link'; // Replace with your actual link
+    window.location.href = 'https://apps.apple.com/us/app/pet-republic/id6476663381'; // Replace with your actual link
   };
 
   // Function to handle Android download
@@ -58,7 +58,7 @@ function Home() {
     <div className="button-container">
       <button onClick={handleIOSDownload} className="download-button ios" style={{ backgroundImage: `url(${iosButtonImage})` }}>
       </button>
-      <button onClick={handleAndroidDownload} className="download-button android" style={{ backgroundImage: `url(${androidButtonImage})` }}>
+      <button onClick={handleAndroidDownload} className="download-button android" title="Coming Soon" style={{ backgroundImage: `url(${androidButtonImage})` }}>
       </button>
     </div>
 </div>
