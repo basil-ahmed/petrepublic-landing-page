@@ -59,7 +59,7 @@ function Home() {
     <div className="button-container">
       <button onClick={handleIOSDownload} className="download-button ios" style={{ backgroundImage: `url(${iosButtonImage})` }}>
       </button>
-      <button onClick={handleAndroidDownload} className="download-button android" style={{ backgroundImage: `url(${androidButtonImage})` }}>
+      <button onClick={handleAndroidDownload} className="download-button android" title="Coming Soon" style={{ backgroundImage: `url(${androidButtonImage})` }}>
       </button>
     </div>
 </div>
