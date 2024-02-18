@@ -25,7 +25,8 @@ function Home() {
 
   // Function to handle Android download
   const handleAndroidDownload = () => {
-    window.location.href = 'your-android-download-link'; // Replace with your actual link
+    // window.location.href = 'your-android-download-link'; // Replace with your actual link
+    alert('Android download is not available at the moment. But don\'t worry, we are working on it to deliver it to you soon!');
   };
 
   return (
