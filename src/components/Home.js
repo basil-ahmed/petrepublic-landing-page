@@ -20,12 +20,13 @@ function Home() {
 
   // Function to handle iOS download
   const handleIOSDownload = () => {
-    window.location.href = 'your-ios-download-link'; // Replace with your actual link
+    window.location.href = 'https://apps.apple.com/us/app/pet-republic/id6476663381'; // Replace with your actual link
   };
 
   // Function to handle Android download
   const handleAndroidDownload = () => {
-    window.location.href = 'your-android-download-link'; // Replace with your actual link
+    // window.location.href = 'your-android-download-link'; // Replace with your actual link
+    alert('Android download is not available at the moment. But don\'t worry, we are working on it to deliver it to you soon!');
   };
 
   return (
