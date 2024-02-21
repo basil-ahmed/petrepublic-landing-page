@@ -7,8 +7,9 @@ import About from './components/About';
 import Services from './components/Services';  
 import PageFooter from './components/Footer';  
 import MailingList from './components/MailingList';
-import PrivacyPolicy from './components/PrivacyPolicy'; // Ensure this component exists
-import TermsAndConditions from './components/TermsAndConditions'; // Ensure this component exists
+import OnboardingForm from './components/OnboardingForm'; 
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsAndConditions from './components/TermsAndConditions';
 
 function App() {
   return (
@@ -24,9 +25,10 @@ function App() {
               <div id="mailing-list"><MailingList /></div>
             </>
           } exact />
-          <Route path="/home" element={<Home />} />
+          {/* <Route path="/home" element={<Home />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} /> */}
+          <Route path='/onboarding' element={<OnboardingForm />} />
         </Routes>
         <PageFooter />
       </div>
