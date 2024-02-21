@@ -7,6 +7,7 @@ import './Home.css'; // Ensure you create this CSS file
 // Import button images
 import iosButtonImage from '../assets/images/Apple-store-download-button.svg'; // Update the path as necessary
 import androidButtonImage from '../assets/images/google-play-badge.png'; // Update the path as necessary
+import appImage from '../assets/images/appss1.svg';
 
 function Home() {
   const settings = {
@@ -56,12 +57,19 @@ function Home() {
     <h2>Welcome To PetRepublic</h2>
     <p> Download the app today and care for your pet with Pet Republic!</p>
     </div> */}
+    
+
+    
+
     <div className="button-container">
+    <img src={appImage} className="app-image" alt="App" />
       <button onClick={handleIOSDownload} className="download-button ios" style={{ backgroundImage: `url(${iosButtonImage})` }}>
       </button>
       <button onClick={handleAndroidDownload} className="download-button android" title="Coming Soon" style={{ backgroundImage: `url(${androidButtonImage})` }}>
       </button>
     </div>
+ 
+    
 </div>
 </>
   );
