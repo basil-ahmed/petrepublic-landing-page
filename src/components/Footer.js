@@ -1,8 +1,33 @@
 import React from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { FaFacebook, FaLinkedin, FaInstagram, FaTiktok, FaPhone, FaEnvelope } from 'react-icons/fa'; 
 import './Footer.css';
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleClick = (event, id) => {
+    event.preventDefault();
+
+   // If not on the root page, navigate to it
+   if (location.pathname !== '/') {
+    navigate('/');
+  }
+
+    // Wait for potential page transition, then scroll
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      const offset = 100; // Change this to the desired offset
+      const position = element.offsetTop - offset;
+      window.scrollTo({
+        top: position,
+        behavior: 'smooth'
+      });
+    }, 0);
+  }
+
   return (
     <footer id="footer" className="footer">
       <img src={require("../assets/images/prdogr.png")} className="prdog" alt='Logo'/>
