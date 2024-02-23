@@ -40,7 +40,7 @@ function MailingList() {
 
     return (
         <div className="signup-form">
-            <h2>Join Our Mailing List</h2>
+            {/* <h2>Join Our Mailing List</h2> */}
             <form onSubmit={handleSubmit} className='sign-up'>
                 <TextField 
                     label="Email" 
