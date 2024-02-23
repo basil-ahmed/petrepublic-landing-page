@@ -32,12 +32,11 @@ function Header() {
         <img src={require("../assets/images/logo.png")} className="logo" alt='Logo'/>
         <img src={require("../assets/images/dog-gif.webp")} className="dog-gif" alt='Dog Running'/>
         <ul>
-          <li><a href="#home" onClick={(event) => handleClick(event, 'home')}>Home</a></li>
+          {/* <li><a href="#home" onClick={(event) => handleClick(event, 'home')}>Home</a></li> */}
           <li><a href="#about" onClick={(event) => handleClick(event, 'about')}>Pet Passport</a></li>
           <li><a href="#services" onClick={(event) => handleClick(event, 'services')}>Services</a></li>
-          <li><a href="#mailing-list" onClick={(event) => handleClick(event, 'mailing-list')}>Mailing List</a></li>
-          <li><a href="/onboarding">Grow With Us</a></li>
-          <li><a href="#footer" onClick={(event) => handleClick(event, 'footer')}>Contact</a></li>
+          {/* <li><a href="#mailing-list" onClick={(event) => handleClick(event, 'mailing-list')}>Mailing List</a></li> */}
+          {/* <li><a href="#footer" onClick={(event) => handleClick(event, 'footer')}>Contact</a></li> */}
         </ul>
       </nav>
     </header>
