@@ -2,6 +2,16 @@ import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { FaFacebook, FaLinkedin, FaInstagram, FaTiktok, FaPhone, FaEnvelope } from 'react-icons/fa'; 
 import './Footer.css';
+import GooglePayLogo from '../assets/images/google-pay-logo.svg';
+import ApplePayLogo from '../assets/images/apple-pay-logo.svg';
+import AmericanExpressLogo from '../assets/images/american-express-blue-logo.svg';
+import VisaLogo from '../assets/images/visa-blue-logo.svg';
+import WesternUnionLogo from '../assets/images/western-union-logo.svg';
+import UnionPayLogo from '../assets/images/unionpay-logo.svg';
+import PaypalLogo from '../assets/images/paypal-blue-logo.svg';
+import MaestroLogo from '../assets/images/maestro-logo.svg';
+import DiscoverLogo from '../assets/images/discover-global-network-logo.svg';
+import CitiLogo from '../assets/images/citi-logo.svg';
 
 const Footer = () => {
 
@@ -30,7 +40,7 @@ const Footer = () => {
 
   return (
     <footer id="footer" className="footer">
-      <img src={require("../assets/images/prdogr.png")} className="prdog" alt='Logo'/>
+      {/* <img src={require("../assets/images/prdogr.png")} className="prdog" alt='Logo'/> */}
       <div className="footer-content">
         <div className="social-media">
           <a href="https://www.facebook.com/profile.php?id=100084255607426" target="_blank" rel="noopener noreferrer">
@@ -46,6 +56,20 @@ const Footer = () => {
             <FaTiktok size={32} color='black'/>
           </a>
         </div>
+
+        <div className="payment-icons">
+          <img src={GooglePayLogo} className='payment-icon' alt='google-pay'/>
+          <img src={ApplePayLogo} className='payment-icon'  alt='apple-pay'/>
+          <img src={AmericanExpressLogo} className='payment-icon'  alt='american-express'/>
+          <img src={VisaLogo} className='payment-icon'  alt='visa'/>
+          <img src={WesternUnionLogo} className='payment-icon'  alt='western-union'/>
+          <img src={UnionPayLogo} className='payment-icon'  alt='union-pay'/>
+          <img src={PaypalLogo} className='payment-icon'  alt='paypal'/>
+          <img src={MaestroLogo}  className='payment-icon' alt='maestro'/>
+          <img src={DiscoverLogo} className='payment-icon'  alt='discover'/>
+          <img src={CitiLogo} className='payment-icon'  alt='citi'/>
+        </div>
+
         <div className="footer-links">
           <p><FaPhone /> : +971 50 116 8480</p>
           <a href="http://legal.petrepublic.ae/Privacy-Policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>

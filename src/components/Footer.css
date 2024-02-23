@@ -36,6 +36,20 @@
   transform: translateY(-10px); 
 }
 
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2.5%;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.payment-icon {
+  width: 4%;
+  height: 4%;
+
+}
+
 .footer-links {
   display: flex;
   justify-content: center;
