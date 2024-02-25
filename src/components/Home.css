@@ -134,9 +134,9 @@
 
 .app-image {
   position: relative;
-  width: 55%; /* Adjust the size of the image */
+  width: 55%; 
   left: -11.5%;
-  /* top: -4%; */
+  top: 12%;
 
 }
 
@@ -180,6 +180,8 @@
     background-size: contain;
     width: 25%;
     height: 70px;
+    position: relative;
+    top: 90%;
     text-align: center;
     color: transparent; /* Makes text invisible if using image with text */
     outline: none;
