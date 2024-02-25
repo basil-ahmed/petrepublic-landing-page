@@ -30,3 +30,10 @@
     justify-content: center;
     padding-left: 30%;
 }
+
+@media (max-width: 768px) {
+    .signup-form {
+        margin-top: 30em;
+        padding-top: 10em;
+    }
+}

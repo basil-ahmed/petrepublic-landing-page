@@ -132,7 +132,18 @@
   
   @media (max-width: 768px) {
     .service-card {
-      width: calc(100% - 20px); /* Adjust for mobile view */
+      width: 17em; /* Adjust for mobile view */
     }
+
+    .service-card-left {
+      margin-right: 4em;
+      margin-left: 4em;
+    }
+
+    .service-card-right {
+      margin-left: 4em;
+    }
+
+
   }
   
