@@ -233,13 +233,13 @@
     .carousel-text .download-button {
       width: 90%;
       height: 20vmin;
-      height: 20vmax;
+      height: 25vmax;
     }
   
     .app-image {
       width: 100%;
       left: 0;
       top: 15vmin;
-      top: 23vmax;
+      top: 30vmax;
     }
   }
