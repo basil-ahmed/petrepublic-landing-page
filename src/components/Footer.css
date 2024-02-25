@@ -95,3 +95,22 @@
   font-weight: bold;
   font-size: 18px;
 }
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column; /* Stack the links vertically */
+    align-items: center; /* Center align the items */
+    text-align: center; /* Center align the text */
+  }
+
+  .footer-links a,
+  .footer-links p {
+    display: block; /* Make each link and paragraph take its own line */
+    margin-bottom: 10px; /* Add some space between each link/paragraph */
+  }
+
+  .payment-icon {
+    width: 6%; /* Adjust the width to make icons larger */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

@@ -130,3 +130,9 @@
 .appdog {
     width: 25%;
 }
+
+@media (max-width: 768px) {
+    .textbox {
+        width: 15em;
+    }
+}
