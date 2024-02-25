@@ -130,7 +130,7 @@
     }
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .service-card {
       width: calc(100% - 20px); /* Adjust for mobile view */
     }

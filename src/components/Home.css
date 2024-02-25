@@ -232,11 +232,14 @@
   
     .carousel-text .download-button {
       width: 90%;
-      height: 50px;
+      height: 20vmin;
+      height: 20vmax;
     }
   
     .app-image {
       width: 100%;
       left: 0;
+      top: 15vmin;
+      top: 23vmax;
     }
   }
