@@ -2,11 +2,11 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Home.css'; // Ensure you create this CSS file
+import './Home.css';
 
 // Import button images
-import iosButtonImage from '../assets/images/Apple-store-download-button.svg'; // Update the path as necessary
-import androidButtonImage from '../assets/images/google-play-badge.png'; // Update the path as necessary
+import iosButtonImage from '../assets/images/Apple-store-download-button.svg'; 
+import androidButtonImage from '../assets/images/google-play-badge.png';
 import appImage from '../assets/images/appss1.svg';
 
 function Home() {
@@ -21,7 +21,7 @@ function Home() {
 
   // Function to handle iOS download
   const handleIOSDownload = () => {
-    window.location.href = 'https://apps.apple.com/us/app/pet-republic/id6476663381'; // Replace with your actual link
+    window.location.href = 'https://apps.apple.com/us/app/pet-republic/id6476663381';
   };
 
   // Function to handle Android download
@@ -46,22 +46,12 @@ function Home() {
         <div className='carousel-image'>
           <img src={require("../assets/images/test2.webp")} alt="Slide 3" />
         </div>
-{/* 
-        <div className='carousel-image'>
-          <img src={require("../assets/images/test3.jpg")} alt="Slide 3" />
-        </div> */}
+
       </Slider>
     </div>
     <div className="carousel-text">
-      {/* <div className="carousel-text-header">
-    <h2>Welcome To PetRepublic</h2>
-    <p> Download the app today and care for your pet with Pet Republic!</p>
-    </div> */}
-    
 
-    
-
-    <div className="button-container">
+  <div className="button-container">
     <img src={appImage} className="app-image" alt="App" />
       <button onClick={handleIOSDownload} className="download-button ios" style={{ backgroundImage: `url(${iosButtonImage})` }}>
       </button>
@@ -70,7 +60,7 @@ function Home() {
     </div>
  
     
-</div>
+  </div>
 </>
   );
 }

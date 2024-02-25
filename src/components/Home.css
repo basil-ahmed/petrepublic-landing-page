@@ -9,8 +9,6 @@
     position: relative;
     display: block;
     box-sizing: border-box;
-  
-    /* Adjust the margin and padding as per your design */
     margin: 0;
     padding: 0;
   }
@@ -188,7 +186,7 @@
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain; /* Adjust as necessary to fit your design */
+    background-size: contain;
     width: 25%;
     height: 70px;
     text-align: center;

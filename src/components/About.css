@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap'); */
 
 
-/* @font-face {
+@font-face {
     font-family: 'Urbane Rounded Demi';
-    src: url('../assets/font/UrbaneRounded-DemiBold.ttf') format('truetype');
+    src: url('../assets/font-license/Urbane Rounded/desktop/UrbaneRounded-DemiBold.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'Urbane Rounded';
-    src: url('../assets/font/UrbaneRounded-Light.ttf') format('truetype');
-  } */
+    src: url('../assets/font-license/Urbane Rounded/desktop/UrbaneRounded-Light.otf') format('opentype');
+  }
 
 .content {
     position: relative;
