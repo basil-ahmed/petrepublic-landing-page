@@ -51,8 +51,11 @@ function Home() {
     </div>
     <div className="carousel-text">
 
-  <div className="button-container">
-    <img src={appImage} className="app-image" alt="App" />
+    <div className="image-container">
+      <img src={appImage} className="app-image" alt="App" />
+    </div>
+
+    <div className="button-container">
       <button onClick={handleIOSDownload} className="download-button ios" style={{ backgroundImage: `url(${iosButtonImage})` }}>
       </button>
       <button onClick={handleAndroidDownload} className="download-button android" title="Coming Soon" style={{ backgroundImage: `url(${androidButtonImage})` }}>
