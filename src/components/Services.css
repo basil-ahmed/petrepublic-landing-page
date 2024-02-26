@@ -144,6 +144,18 @@
       margin-left: 4em;
     }
 
+    .services-header h1 {
+      width: 8em;
+      text-align: center;
+      margin-left: -1.4em;
+    }
+
+    .services-header p {
+      width: 18em;
+      text-align: center;
+      margin-left: -4em;
+    }
+
 
   }
   
