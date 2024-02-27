@@ -12,6 +12,7 @@ import PaypalLogo from '../assets/images/paypal-blue-logo.svg';
 import MaestroLogo from '../assets/images/maestro-logo.svg';
 import DiscoverLogo from '../assets/images/discover-global-network-logo.svg';
 import CitiLogo from '../assets/images/citi-logo.svg';
+import MastercardLogo from '../assets/images/mastercard.svg';
 
 const Footer = () => {
 
@@ -68,6 +69,7 @@ const Footer = () => {
           <img src={MaestroLogo}  className='payment-icon' alt='maestro'/>
           <img src={DiscoverLogo} className='payment-icon'  alt='discover'/>
           <img src={CitiLogo} className='payment-icon'  alt='citi'/>
+          <img src={MastercardLogo} className='payment-icon' alt='mastercard'/>
         </div>
 
         <div className="footer-links">

@@ -105,6 +105,12 @@ nav ul li a:hover::after {
 	width: 100%;
 }
 
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
 html {
 	scroll-behavior: smooth;
 }
