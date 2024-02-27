@@ -132,6 +132,12 @@ html {
     justify-content: center;
   }
 
+  body, html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+
   .logo {
     width: 40%; /* Adjust this value as needed */
   }
@@ -145,5 +151,18 @@ html {
   nav ul li {
     display: block; /* Stack the links vertically */
     /* padding: 10px 0; */
+  }
+
+  @keyframes running-dog {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(100%); }
+  }
+
+  .dog-gif {
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    animation: running-dog 2s linear infinite;
+    z-index: -1;
   }
 }
