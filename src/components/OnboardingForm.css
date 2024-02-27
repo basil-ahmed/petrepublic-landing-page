@@ -1,0 +1,30 @@
+.onboarding-header {
+    margin-bottom: 50px;
+    max-width: 50%;
+    margin-left: 25%;
+}
+
+.onboarding-header h2 {
+color: #EF8214; /* The color for the subtitle */
+font-size: 28px;
+margin-bottom: 5px;
+font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+font-style: normal;
+}
+
+.onboarding-header h1 {
+color: #333; /* The color for the main title */
+font-size: 32px;
+margin-bottom: 20px;
+font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+font-style: normal;
+}
+
+.onboarding-desc {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #4a4a4a;
+}
