@@ -184,14 +184,16 @@
   @media (max-width: 768px) {
     .service-card {
       width: 17em; /* Adjust for mobile view */
+      margin-bottom: 4em;
     }
 
     .service-card-left {
-      margin-right: 4em;
+      margin-right: 6em;
       margin-left: 4em;
     }
 
     .service-card-right {
+      margin-right: 6em;
       margin-left: 4em;
     }
 
