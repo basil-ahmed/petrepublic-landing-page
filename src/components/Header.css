@@ -50,6 +50,7 @@ p {
 .logo {
     /* height: 5%; */
     width: 15%;
+    cursor: pointer;
     /* padding-top: 10px; */
 }
 
