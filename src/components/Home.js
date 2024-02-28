@@ -26,8 +26,7 @@ function Home() {
 
   // Function to handle Android download
   const handleAndroidDownload = () => {
-    // window.location.href = 'your-android-download-link'; // Replace with your actual link
-    alert('Android download is not available at the moment. But don\'t worry, we are working on it to deliver it to you soon!');
+    window.location.href = 'https://play.google.com/store/apps/details?id=ae.petrepublic.app&hl=en&gl=US'; 
   };
 
   return (
@@ -58,7 +57,7 @@ function Home() {
     <div className="button-container">
       <button onClick={handleIOSDownload} className="download-button ios" style={{ backgroundImage: `url(${iosButtonImage})` }}>
       </button>
-      <button onClick={handleAndroidDownload} className="download-button android" title="Coming Soon" style={{ backgroundImage: `url(${androidButtonImage})` }}>
+      <button onClick={handleAndroidDownload} className="download-button android" style={{ backgroundImage: `url(${androidButtonImage})` }}>
       </button>
     </div>
  
