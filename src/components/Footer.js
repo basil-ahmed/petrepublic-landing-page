@@ -61,9 +61,7 @@ const Footer = () => {
         <div className="payment-icons">
           <img src={GooglePayLogo} className='payment-icon' alt='google-pay'/>
           <img src={ApplePayLogo} className='payment-icon'  alt='apple-pay'/>
-          <img src={AmericanExpressLogo} className='payment-icon'  alt='american-express'/>
           <img src={VisaLogo} className='payment-icon'  alt='visa'/>
-          <img src={WesternUnionLogo} className='payment-icon'  alt='western-union'/>
           <img src={UnionPayLogo} className='payment-icon'  alt='union-pay'/>
           <img src={PaypalLogo} className='payment-icon'  alt='paypal'/>
           <img src={MaestroLogo}  className='payment-icon' alt='maestro'/>
