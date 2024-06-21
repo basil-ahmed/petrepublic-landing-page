@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+.blog-section {
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+  color: #EF8214; 
+}
+
+.blog-header {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 5rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
+
+.blog-cards {
+  display: flex;
+  flex-direction: row; /* Ensure cards are arranged in a row */
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.content {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s;
+  overflow: hidden;
+  width: 25rem;
+  height: 30rem; /* Adjust this to increase the height of the card */
+}
+
+.blog-card:hover {
+  transform: translateY(-3px);
+}
+
+.blog-card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.blog-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Darker overlay */
+  border-radius: 8px;
+  text-align: center; /* Center-align text */
+  
+}
+
+.blog-card h3 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.blog-description {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  color: #ddd;
+  margin: 1rem 0;
+  padding-top: 15rem;
+}
+
+.blog-author {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  color: #bbb;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 960px) {
+  .blog-card {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

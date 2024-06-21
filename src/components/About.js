@@ -33,7 +33,7 @@ function About() {
 
   return (
     <>
-    <div className="content" >
+    <div className="content_1" >
       <h1 className="aboutapp" data-aos="fade-down">Introducing the <span style={{color:"#1F9C89"}}>Pet Passport</span> on the PetRepublic app!</h1>
       <div className="textbox" data-aos="fade-left">
       <p><img src={Icon1} alt="Icon 1" /><strong>Step 1 : </strong> Choose "Create Passport" on the app.</p>

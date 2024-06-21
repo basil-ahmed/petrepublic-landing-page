@@ -12,7 +12,7 @@
     src: url('../assets/font-license/Urbane Rounded/desktop/UrbaneRounded-Light.otf') format('opentype');
   }
 
-.content {
+.content_1 {
     position: relative;
     background-image: url("../assets/images/layeredblend4.svg");
     background-size: cover; /* Cover the entire .content area */

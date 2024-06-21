@@ -1,15 +1,18 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';  
-import Home from './components/Home';      
-import About from './components/About';    
-import Services from './components/Services';  
-import PageFooter from './components/Footer';  
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Services from './components/Services';
 import MailingList from './components/MailingList';
-import OnboardingForm from './components/OnboardingForm'; 
+import BlogSection from './components/BlogSection';
+import BlogArticle from './components/BlogArticle';
+import PageFooter from './components/Footer';
+import OnboardingForm from './components/OnboardingForm';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsAndConditions from './components/TermsAndConditions';
+
 
 function App() {
   return (
@@ -23,11 +26,10 @@ function App() {
               <div id="about"><About /></div>
               <div id="services"><Services /></div>
               <div id="mailing-list"><MailingList /></div>
+              <div id="blog-section"><BlogSection /></div>
             </>
           } exact />
-          {/* <Route path="/home" element={<Home />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-and-conditions" element={<TermsAndConditions />} /> */}
+          <Route path="/blog/:id" element={<BlogArticle />} />
           <Route path='/onboarding' element={<OnboardingForm />} />
         </Routes>
         <PageFooter />
