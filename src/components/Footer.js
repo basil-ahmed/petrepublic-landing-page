@@ -77,7 +77,7 @@ const Footer = () => {
           <a href="http://legal.petrepublic.ae/Privacy-Policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
           <a href="http://legal.petrepublic.ae/Terms-and-Conditions" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
           <a href="/onboarding">Grow With Us</a>
-          <a href="#mailing-list" onClick={(event) => handleClick(event, 'mailing-list')}>Mailing List</a>
+          {/* <a href="#mailing-list" onClick={(event) => handleClick(event, 'mailing-list')}>Mailing List</a> */}
           <p><FaEnvelope /> : support@petrepublic.ae</p>
         </div>
         <div className="footer-company-name">

@@ -12,6 +12,7 @@ import PageFooter from './components/Footer';
 import OnboardingForm from './components/OnboardingForm';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsAndConditions from './components/TermsAndConditions';
+import Partnership from './components/Partnership';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
               <div id="home"><Home /></div>
               <div id="about"><About /></div>
               <div id="services"><Services /></div>
-              <div id="mailing-list"><MailingList /></div>
+              <div id="partnership"><Partnership /></div>
               <div id="blog-section"><BlogSection /></div>
             </>
           } exact />

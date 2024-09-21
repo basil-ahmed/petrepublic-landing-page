@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+.partnership {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.slick-slide {
+  display: flex; /* Center image if needed */
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Ensure the height is flexible */
+}
+
+.slick-track {
+  height: auto !important; /* Force the track to adjust to content height */
+}
+
+.slick-list {
+  height: auto !important; /* Ensure the entire carousel has auto height */
+}
+
+.partner-image {
+  width: 100%;
+  height: auto;
+  padding: 1vh;
+}
+
+.partnership-title {
+  color: #333; /* The color for the main title */
+  font-size: 32px;
+  margin-bottom: 3vh;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.partnership p {
+  color: #666; /* The color for the paragraph */
+    margin-bottom: 10vh;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.divider {
+  width: 95%;
+  margin: 20px auto; /* Adjust the margin as needed */
+  border: 0;
+  border-top: 2px solid black;
+}
