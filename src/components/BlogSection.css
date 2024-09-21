@@ -1,6 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
+/* Existing Startup Article Styles */
+.startup-article-wrapper {
+  display: flex; /* Ensures image and text are in a row */
+  align-items: center; /* Align items vertically */
+  margin: 50px auto; /* Adjust margins as needed */
+  width: 80%; /* Adjust width as needed */
+  overflow: hidden; /* Clear floats */
+}
+
+.startup-article-image {
+  max-width: 40%; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.startup-text-wrapper {
+  flex-grow: 1; /* Take the remaining space next to the image */
+  text-align: left; /* Align text to the left */
+  display: flex;
+  flex-direction: column; /* Stack text elements vertically */
+  justify-content: center; /* Center the content vertically */
+  height: 100%; /* Ensure it takes the full height of the wrapper */
+}
+
+/* Change body text color to black */
+.startup-article h1,
+.startup-article p,
+.startup-link {
+  color: black; /* Set text color to black */
+}
+
+/* Read more link styles */
+.startup-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.startup-link:hover {
+  color: #EF8214; /* Orange color on hover */
+}
+
 .blog-section {
   padding: 50px 20px;
   background-color: #f8f8f8;
@@ -34,7 +78,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: auto;
+  height: auto !important;
 }
 
 .blog-description {

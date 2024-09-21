@@ -9,10 +9,10 @@ function Header() {
   const handleClick = (event, id) => {
     event.preventDefault();
 
-   // If not on the root page, navigate to it
-   if (location.pathname !== '/') {
-    navigate('/');
-  }
+    // If not on the root page, navigate to it
+    if (location.pathname !== '/') {
+      navigate('/');
+    }
 
     // Wait for potential page transition, then scroll
     setTimeout(() => {
@@ -29,15 +29,30 @@ function Header() {
   return (
     <header className="container">
       <nav>
-        <img src={require("../assets/images/logo.png")} onClick={(event) => handleClick(event, 'home')} className="logo" alt='Logo'/>
-        <img src={require("../assets/images/dog-gif.webp")} className="dog-gif" alt='Dog Running'/>
-        <ul>
-          {/* <li><a href="#home" onClick={(event) => handleClick(event, 'home')}>Home</a></li> */}
-          <li><a href="#about" onClick={(event) => handleClick(event, 'about')}>Pet Passport</a></li>
-          <li><a href="#services" onClick={(event) => handleClick(event, 'services')}>Services</a></li>
-          {/* <li><a href="#mailing-list" onClick={(event) => handleClick(event, 'mailing-list')}>Mailing List</a></li> */}
-          {/* <li><a href="#footer" onClick={(event) => handleClick(event, 'footer')}>Contact</a></li> */}
-        </ul>
+        <img
+          src={require("../assets/images/logo.png")}
+          onClick={(event) => handleClick(event, 'home')}
+          className="logo"
+          alt="Logo"
+        />
+        <img
+          src={require("../assets/images/dog-gif.webp")}
+          className="dog-gif"
+          alt="Dog Running"
+        />
+        <div className="nav-right">
+          <ul>
+            <li><a href="#about" onClick={(event) => handleClick(event, 'about')}>Pet Passport</a></li>
+            <li><a href="#services" onClick={(event) => handleClick(event, 'services')}>Services</a></li>
+          </ul>
+          <div className="download-container">
+            <button className="download-btn">Download</button>
+            <div className="download-dropdown">
+              <a href="https://apps.apple.com/us/app/pet-republic/id6476663381" target='_blank' rel="noreferrer">iOS</a>
+              <a href="https://play.google.com/store/apps/details?id=ae.petrepublic.app&hl=en&gl=US" target='_blank' rel="noreferrer">Android</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
   );

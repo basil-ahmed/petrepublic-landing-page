@@ -5,13 +5,15 @@ import appdog from '../assets/images/appdog1.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Icon1 from '../assets/images/passport-icon.svg';
-import Icon2 from '../assets/images/credit-card-icon.svg'
+import Icon2 from '../assets/images/credit-card-icon.svg';
 import Icon3 from '../assets/images/invoice-receipt-icon.svg';
 import Icon4 from '../assets/images/paw-icon.svg';
+// Import the uploaded image
+import uploadedImage from '../assets/images/petimgg.png'; // Make sure this path is correct
 
 function About() {
   const [scrollPosition, setScrollPosition] = useState(0);
-
+ 
   useEffect(() => {
     const handleScroll = () => {
       let newScrollPosition = window.scrollY / 2.5;
@@ -32,32 +34,38 @@ function About() {
   }, []);
 
   return (
-    <>
-    <div className="content_1" >
-      <h1 className="aboutapp" data-aos="fade-down">Introducing the <span style={{color:"#1F9C89"}}>Pet Passport</span> on the PetRepublic app!</h1>
-      <div className="textbox" data-aos="fade-left">
-      <p><img src={Icon1} alt="Icon 1" /><strong>Step 1 : </strong> Choose "Create Passport" on the app.</p>
+    <div className="content_1">
+      <div className="header-textbox-container">
+        <h1 className="aboutapp" data-aos="fade-down">
+          Introducing the <span style={{ color: "#EF8214" }}>e-Passport</span> on the PetRepublic app!
+        </h1>
+        
+        {/* This wraps the text and image horizontally */}
+        <div className="textbox-image-container">
+          <div className="textbox" data-aos="fade-left">
+            <p>
+              <img src={Icon1} alt="Icon 1" style={{ marginRight: '10px', verticalAlign: 'middle' }} />
+              <strong>The e-Passport:</strong> a digital ID for your pet, linking its microchip to a global database. It ensures your pet never gets lost and offers seamless access to:
+            </p>
+            <ul className="pet-details">
+              <li>Medical & Vaccination Records</li>
+              <li>70+ Partner Network</li>
+              <li>Easy Ownership Transfers</li>
+            </ul>
+            <p>
+              Beyond travel, the Pet e-Passport simplifies vet visits and event entry, eliminating the need for physical documents. All your pet’s essential info, all in one place.
+            </p>
+          </div>
+          
+          {/* Image to the right of the textbox */}
+          <div className="image-container" data-aos="fade-left">
+            <img src={uploadedImage} alt="Pet Passport" className="uploaded-image" />
+          </div>
         </div>
-        <div className="textbox" data-aos="fade-right">
-          <p><img src={Icon2} alt="Icon 2" /><strong>Step 2 : </strong> Select your payment plan.</p>
-        </div>
-        <div className="textbox" data-aos="fade-left">
-          <p><img src={Icon3} alt="Icon 3" /><strong>Step 3 : </strong> Fill out the payment details.</p>
-        </div>
-        <div className="textbox" data-aos="fade-right">
-          <p><img src={Icon4} alt="Icon 4" /><strong>Step 4 : </strong> Fill out your fur baby's details!</p>
-        </div>
-      {/* <img src={van} className="doglogo" alt="Dog Logo" style={{ transform: `translate3d(${scrollPosition-scrollPosition}px, ${-scrollPosition}px, 0)` }}/> */}
-    </div> 
-
-    {/* <div className='phone-section'>
-      <div className='phone'>
-        <img src={appdog} alt="App Dog" className="appdog" />
       </div>
-      
-    </div> */}
-    </>
+    </div>
   );
+  
 }
 
 export default About;

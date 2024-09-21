@@ -5,6 +5,17 @@ import './BlogSection.css';
 import article1 from '../assets/images/article.jpg';
 import article2 from '../assets/images/article2.png';
 import article3 from '../assets/images/article3.jpg';
+import passport from '../assets/images/passport.png';
+
+
+// Startup Article data
+const startupArticle = {
+  title: 'E-passport for UAE pets - Khaleej Times',
+  description: 'This digital solution aims to replace traditional pet passports and vaccination books, creating a centralized database for pet information.',
+  content: `Frustrated with managing endless paperwork and scheduling vet appointments for your beloved pets? Don't worry! That's where Pet Republic comes in. With just a few taps, we will connect you seamlessly to pet care centers across the country, making life easier for both pets and their owners.`,
+  link: 'https://www.khaleejtimes.com/uae/e-passport-for-uae-pets-new-app-to-streamline-documents-vet-appointments?_refresh=true',
+};
+
 
 const blogs = [
   {
@@ -33,6 +44,24 @@ const blogs = [
 const BlogSection = () => {
   return (
     <div className="blog-section">
+      {/* Startup Article Section */}
+      <div className="startup-article-wrapper">
+        <img src={passport} alt="Startup Article Image" className="startup-article-image" />
+        <div className="startup-text-wrapper">
+          {/* Adding inline style for orange color */}
+          <h1 style={{ color: '#EF8214' }}>{startupArticle.title}</h1>
+          <p className="startup-description">{startupArticle.description}</p>
+          <p className="startup-content">{startupArticle.content}</p>
+          <a
+            href={startupArticle.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="startup-link"
+          >
+            Read more here
+          </a>
+        </div>
+      </div>
       <Typography variant="h4" component="h2" className="blog-header">
         Blogs from Our Team!
       </Typography>

@@ -2,105 +2,140 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap'); */
 
 
+/* Fonts */
 @font-face {
     font-family: 'Urbane Rounded Demi';
     src: url('../assets/font-license/Urbane Rounded/desktop/UrbaneRounded-DemiBold.otf') format('opentype');
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: 'Urbane Rounded';
     src: url('../assets/font-license/Urbane Rounded/desktop/UrbaneRounded-Light.otf') format('opentype');
-  }
+}
 
+/* Main content container */
 .content_1 {
     position: relative;
     background-image: url("../assets/images/layeredblend4.svg");
-    background-size: cover; /* Cover the entire .content area */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    padding-top: 5em;
+    padding-top: 5em; /* Space for heading/title */
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin: 0 auto;
+    padding-bottom: 2%;
+    min-height: 100vh; /* Ensure it takes up the full viewport height */
+}
+
+/* Container for heading and text box */
+.header-textbox-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: center; /* Center-align heading */
+}
+
+
+
+
+/* New flex container to align text and image horizontally */
+/*.textbox-image-container {
+    display: flex;
+    flex-direction: row; /* Align the text box and image side by side */
+    /*justify-content: space-between;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 2%;
-}
+    width: 90%; /* Adjust this width based on your layout preference */
+    /*margin-top: 2em;
+    margin-left: 5%; /* Ensure a bit of spacing on the left */
+/*}*/
 
-.content .textbox {
-    position: relative;
-    max-width: 600;
-}
-
-.textbox {
+.textbox-image-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between; /* Space between the text box and image */
     align-items: center;
-    justify-content: flex-start;
-    width: 20%;
-    height: 0.5em;
-    padding-right: 2em;
-    padding-left: 2em;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+    width: 90%; /* Adjust based on your layout preference */
+    margin-top: 2em;
+    margin-left: auto; /* Center align with auto margins */
+    margin-right: auto;
+}
+
+/* Image container styling */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%; /* Adjust this width as needed */
+    max-width: 100%; /* Ensure the text box doesn’t get too wide */
+    margin: 0; /* Remove extra margins */
+    
+}
+
+
+.uploaded-image {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+.aboutapp {
+    font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+    font-size: 32px;
+    text-align: center;
     color: #000000;
-    line-height: 1.5;
-    margin-right: 40em;
-    padding-bottom: 1%;
-    padding-top: 1%;
+    margin-bottom: 30px;
+}
+
+/* Textbox styling */
+.textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    width: 25%; /* Set the width to 40% of the parent container */
+    max-width: 100%; /* Ensure the text box doesn’t get too wide */
+    padding: 2em; /* Maintain padding for spacing */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    line-height: 1.8;
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
     font-style: normal;
-    position: relative;
     background: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
+    border-radius: 0px;
     transition: transform 0.3s ease-in-out;
-    flex: 1 0 20%; /* This will make the textboxes take up equal space */
-    margin:10px;
-    transition: background-color 0.5s ease; /* Add a transition for smooth color change */
+    margin-top: 2em; /* Space above the text box */
+    margin-left: 5%; /* Offset the text box from the left edge */
+    margin-right: auto; /* Ensure it stays on the left */
+    border: 1.75px solid #1F9C89; /* Thin border added with the specified color */
+
 }
 
-.textbox::before {
-    content: "";
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(45deg, #f8f8f8 100%, #f8f8f8 100%, #f8f8f8 100%);
-    transform: rotate(30deg);
-    z-index: -1;
-    opacity: 0;
-}
-
-.textbox::after {
-    content: "";
-    position: absolute;
-    bottom: -80px;
-    right: -80px;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(45deg, #f8f8f8 100%, #f8f8f8 100%);
-    transform: rotate(-30deg);
-    z-index: -1;
-    opacity: 0;
-}
-
-.textbox:hover {
-    transform: scale(1.1);
-    background-color: #f8f8f8; /* Change the background color to grey on hover */
-}
-
+/* Adjust icon in text */
 .textbox p img {
-    width: 25px; /* Adjust the width of the icons */
-    height: auto; /* Keep the aspect ratio */
-    vertical-align: middle; /* Align the icons with the text */
-    margin-right: 10px; /* Add some space between the icon and the text */
-  }
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 
+/* Bullet points styling */
+.pet-details {
+    list-style-type: disc; /* Ensure standard bullet points */
+    padding-left: 20px; /* Indent bullet points */
+    margin: 10px 0;
+}
+
+/* Dog logo at the bottom */
 .doglogo {
     position: absolute;
     bottom: -50px;
@@ -109,30 +144,55 @@
     transform: translateY(200px);
 }
 
-.aboutapp{
-    font-family: 'Outfit', sans-serif;
-	font-weight: 600;
-    font-style: normal;
-    font-size: 32px; /* Increase the font size */
-    text-align: center; /* Center the text */
-    color: #EF8214; /* Change the text color */
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  */
-    margin-bottom: 20px; /* Add some space below the heading */
-}
 
-.steps-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
-.appdog {
-    width: 25%;
-}
 
+/* Responsive for mobile devices */
 @media (max-width: 768px) {
+    .content_1 {
+        flex-direction: column; /* Stack the content on mobile */
+        align-items: center; /* Center items on mobile */
+    }
+
+    .header-textbox-container {
+        width: 90%; /* Take up most of the width on smaller screens */
+        align-items: center; /* Center items in the container */
+
+        
+    }
+
+    .textbox-image-container {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center;
+    }
+
+
+    .image-container {
+        width: 90%; /* Full width on mobile */
+        margin: 1em auto;
+    }
+    
+    .uploaded-image {
+        width: 100%; /* Take up full width on mobile */
+        max-width: 90%; /* Prevent image from overflowing */
+    }
+
+   
+
     .textbox {
-        width: 15em;
+        width: 90%; /* Take up most of the width on smaller screens */
+        max-width: 100%; /* Ensure the text box doesn’t exceed the screen width */
+        padding: 1.5em; /* Adjust padding */
+        margin: 1em auto; /* Center the text box on mobile */
+    }
+
+    
+
+    .aboutapp {
+        font-size: 28px;
+    }
+
+    .doglogo {
+        width: 50%;
     }
 }

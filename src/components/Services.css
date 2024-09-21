@@ -9,206 +9,108 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .services-header {
+.services-header {
     max-width: 50%;
-  }
-  
-  .services-header h2 {
-    color: #EF8214; /* The color for the subtitle */
-    font-size: 28px;
-    margin-bottom: 5px;
-    font-family: 'Outfit', sans-serif;
-	  font-weight: 600;
-    font-style: normal;
-  }
-  
-  .services-header h1 {
-    color: #333; /* The color for the main title */
-    font-size: 32px;
-    margin-bottom: 20px;
-    font-family: 'Outfit', sans-serif;
-	  font-weight: 600;
-    font-style: normal;
-  }
-  
-  .services-header p {
-    color: #666; /* The color for the paragraph */
     margin-bottom: 50px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .service-cards {
-    height: 500px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: space-between;
-    align-items: center;
-    gap: 20px;
-    margin-right: 3%;
 }
-  
-  .service-card {
-    width: 300px; /* Example width, adjust as needed */
-    height: 200px;
-    margin: 8%;
-    padding: 5%;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    min-height: 150px; /* Adjust as needed */
-    margin-bottom: 30px;
-    perspective: 1000px;
-    cursor: pointer;
-    backface-visibility: hidden;
-  }
 
-  .service-card-text {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: inherit;
-    text-align: left;
-  }
-
-  /* .service-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  } */
-  
-  .service-card img {
-    width: 60px;
-    margin-bottom: 20px;
-    border: 3px solid #EF8214;
-    border-radius: 30%;
-    /* padding: 10px; */
-  }
-  
-  
-  .service-card h3 {
+.services-header h1 {
     color: #333;
-    margin-bottom: 15px;
+    font-size: 32px;
     font-family: 'Outfit', sans-serif;
-	font-weight: 600;
-    font-style: normal;
-    font-size:medium;
-  }
-  
-  .service-card p {
-    color: #666;
-    font-size: 14px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
+    font-weight: 500;
+}
 
-  /* .services-section {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-} */
-
-.service-card-left, .service-card-right {
+.service-cards {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    width: 80%;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Common card styles */
+.service-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-height: 200px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.service-card .card-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.service-card .card-text h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.service-card .card-text p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #666;
+    margin-top: 10px;
+}
+
+.service-card .card-image {
+    flex: 0.4;
+    display: flex;
     justify-content: center;
-    align-items: center; 
-    width: 40%; /* Adjust the width so two cards fit per line */
+    align-items: center;
 }
 
-.service-card .card-front, .service-card .card-back {
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  transition: transform 0.6s linear;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  background: #f8f8f8; /* Set background color to match card color */
+.service-card .card-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #EF8214;
 }
 
-.service-card .card-front {
-  background: #fff;
-  align-items: center;
-    justify-content: center;
-}
+/* Alternating layout - Image right, text left */
 
-.service-card .card-back {
-  align-items: center;
-    justify-content: center;
-    transform: rotateY(180deg);
-    position: absolute;
-    background: #fff; /* Set background color to match card color */
-}
-.card-front, .card-back {
-  backface-visibility: hidden;
-}
 
-.service-card.flipped .card-front {
-  transform: rotateY(-180deg);
-}
-
-.service-card.flipped .card-back {
-  transform: rotateY(0deg);
-}
-  
-  @media (max-width: 960px) {
+/* Responsive design */
+@media (max-width: 768px) {
     .service-card {
-      width: calc(50% - 20px); /* Adjust for tablet view */
+        flex-direction: column;
+        text-align: center;
     }
+
+    .service-card .card-text {
+        padding: 10px 0;
+    }
+
+    .service-card .card-image {
+        margin-bottom: 20px;
+    }
+    .service-card.grooming, .service-card.pet-taxi {
+      flex-direction: column-reverse; /* Ensures the image is on top on mobile */
   }
-  
-  @media (max-width: 768px) {
-    .service-card {
-      width: 17em; /* Adjust for mobile view */
-      margin-bottom: 4em;
-    }
+}
 
-    .service-card-left {
-      margin-right: 6em;
-      margin-left: 4em;
-    }
-
-    .service-card-right {
-      margin-right: 6em;
-      margin-left: 4em;
-    }
-
+@media (max-width: 960px) {
     .services-header h1 {
-      width: 8em;
-      text-align: center;
-      margin-left: -1.4em;
+        font-size: 28px;
     }
 
-    .services-header p {
-      width: 18em;
-      text-align: center;
-      margin-left: -4em;
+    .service-cards {
+        width: 90%;
     }
 
-
-  }
-  
+    .service-card {
+        padding: 15px;
+    }
+}
