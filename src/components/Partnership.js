@@ -15,6 +15,7 @@ import Partner7 from '../assets/images/AquariumLives_edit.svg';
 // import Partner8 from '../assets/C&C_svg.svg';
 import Partner9 from '../assets/images/BarkAvenue_svg.svg';
 import Partner10 from '../assets/images/woof&purr_svg.svg';
+import { Helmet } from 'react-helmet-async';
 // import Partner11 from '../assets/images/ninetails.png';
 
 const partners = [
@@ -46,6 +47,10 @@ const Partnership = () => {
 
   return (
     <div className="partnership">
+      <Helmet>
+        <title>Our list of amazing Partners!</title>
+        <meta name="description" content="Working together with nation-wide famous centers to support pets and pet owners, whether it is pet grooming services or veterinary services!"/>
+      </Helmet>
       <h2 className="partnership-title">Our Partners</h2>
       <p>Working together with nation-wide famous centers to support pets and pet owners!<br />
        Whether it is pet grooming services or you need a vet, our qualified partners will be there to help!</p>

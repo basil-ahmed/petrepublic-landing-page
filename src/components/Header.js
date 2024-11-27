@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './Header.css'; 
+import { Helmet } from 'react-helmet-async';
 
 function Header() {
   const navigate = useNavigate();
@@ -28,6 +29,10 @@ function Header() {
 
   return (
     <header className="container">
+      <Helmet>
+        <title>Pet Republic: The one stop app for all your pet care needs!</title>
+        <meta name="description" content="The one stop for all your pet grooming, veterinary and pet products needs in the UAE!"/>
+      </Helmet>
       <nav>
         <img
           src={require("../assets/images/logo.png")}
@@ -55,6 +60,7 @@ function Header() {
         </div>
       </nav>
     </header>
+    
   );
 }
 
