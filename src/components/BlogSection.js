@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 import './BlogSection.css';
 import article1 from '../assets/images/article.jpg';
 import article2 from '../assets/images/article2.png';
 import article3 from '../assets/images/article3.jpg';
 import passport from '../assets/images/passport.png';
-
 
 // Startup Article data
 const startupArticle = {
@@ -15,7 +15,6 @@ const startupArticle = {
   content: `Frustrated with managing endless paperwork and scheduling vet appointments for your beloved pets? Don't worry! That's where Pet Republic comes in. With just a few taps, we will connect you seamlessly to pet care centers across the country, making life easier for both pets and their owners.`,
   link: 'https://www.khaleejtimes.com/uae/e-passport-for-uae-pets-new-app-to-streamline-documents-vet-appointments?_refresh=true',
 };
-
 
 const blogs = [
   {
@@ -44,11 +43,18 @@ const blogs = [
 const BlogSection = () => {
   return (
     <div className="blog-section">
+      {/* Metadata Section */}
+      <Helmet>
+        <title>Blog Section - Pet Republic</title>
+        <meta name="description" content="Explore informative blogs about pet care, safety tips, and health advice from our team at Pet Republic." />
+        <meta name="keywords" content="pet care, pet safety, pet health, pet-friendly, pet advice, UAE pets" />
+        <meta name="author" content="Pet Republic Team" />
+      </Helmet>
+
       {/* Startup Article Section */}
       <div className="startup-article-wrapper">
         <img src={passport} alt="Startup Article Image" className="startup-article-image" />
         <div className="startup-text-wrapper">
-          {/* Adding inline style for orange color */}
           <h1 style={{ color: '#EF8214' }}>{startupArticle.title}</h1>
           <p className="startup-description">{startupArticle.description}</p>
           <p className="startup-content">{startupArticle.content}</p>
@@ -62,6 +68,8 @@ const BlogSection = () => {
           </a>
         </div>
       </div>
+
+      {/* Blog Cards Section */}
       <Typography variant="h4" component="h2" className="blog-header">
         Blogs from Our Team!
       </Typography>
